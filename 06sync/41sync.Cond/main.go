@@ -13,7 +13,7 @@ import (
 //Signal()	单发
 //Broadcast()	广播
 //调用 Wait() 函数前，需要先获得条件变量的成员锁，原因是需要互斥地变更条件变量的等待队列。在 Wait() 返回前，会重新上锁。
-//条件变量和锁结合使用，在并发时如果逻辑不严谨容易发生死锁，所以尽量不要使用条件变量，推荐用 sync.WaitGroup 来实现并发时 Go 程间的同步。
+//条件变量和锁结合使用，在并发时如果逻辑不严谨容易发生死锁，所以尽量不要使用条件变量，推荐用 42sync.WaitGroup 来实现并发时 Go 程间的同步。
 
 var locker = new(sync.Mutex)
 var cond = sync.NewCond(locker)

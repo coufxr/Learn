@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"music.com/mats"
+	"Learn/mats"
 )
 
 //init类似于python中的__name__=__main__

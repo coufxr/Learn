@@ -61,8 +61,9 @@ func main() {
 	var book3 book
 	book3.newBook(24, "《java 从入门到入土》", "java", "北京邮电出版社", 100000)
 	book3.printbook()
-	//book3.updata([]string{"", "《java 从入门到入坟》"})
+	book3.updata([]string{"", "《java 从入门到入坟》"})
 	book3.updata([]string{"dasf", "", "", "", "fasfas"})
 	book3.printbook()
+	//var book book
 
 }
